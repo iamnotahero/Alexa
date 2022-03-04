@@ -71,6 +71,3 @@ skillsHeader.forEach((el) =>{
 /*==================== DARK LIGHT THEME ====================*/ 
 
 /*==================== FACEBOOK PLUGIN ====================*/ 
-var chatbox = document.getElementById('fb-customer-chat');
-chatbox.setAttribute("page_id", "105191805450673");
-chatbox.setAttribute("attribution", "biz_inbox");
