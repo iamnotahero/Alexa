@@ -34,7 +34,7 @@ skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills(){
     let itemClass = this.parentNode.className
-
+    //code below will iterate though all element make it all close with class name of skills content and close for me to remember.
     for(i = 0; i < skillsContent.length; i++){
         skillsContent[i].className = 'skills__content skills__close'
     }
@@ -69,3 +69,4 @@ skillsHeader.forEach((el) =>{
 
 
 /*==================== DARK LIGHT THEME ====================*/ 
+
