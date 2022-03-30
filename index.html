@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -16,29 +16,6 @@
         <title>Hendrix Leonard E. Maligaya</title>
     </head>
     <body>
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "105191805450673");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v13.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -79,12 +56,6 @@
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
                 <div classes="nav__btns">
-                 <!-- Messenger Chat Plugin Code -->
-                    <div id="fb-root" class="fb-plugin"></div>
-                     <!-- Your Chat Plugin code -->
-                        <div id="fb-customer-chat" class="fb-customerchat">
-                            
-                        </div>
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -613,11 +584,39 @@
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">Most Recent Projects</span>
 
-                <div class="portfolio__container container">
-                    <div>
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Full Enterprise Trucking Database</h3>
+                                <p class="portfolio__description">A website based database adaptable to all devices and with simple ease of life UX design for the user. Created the API, Front-End and Back-end and the Database.  
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Full Enterprise Trucking Database</h3>
+                                <p class="portfolio__description">A website based database adaptable to all devices and with simple ease of life UX design for the user.      
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Full Enterprise Trucking Database</h3>
@@ -630,6 +629,15 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+ 
                 </div>
             </section>
 
