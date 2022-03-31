@@ -144,10 +144,14 @@ themeButton.addEventListener('click', () =>{
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 /*==================== FORM VALIDATION ====================*/ 
+const validateEmail = (email) => {
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
 function contactsubmit(){
     let inputFields = document.getElementsByClassName('contact__input');
     const emptyFieldNames = [];
-
     for (var i = 0; i < inputFields.length; i++) {     
     if (inputFields[i].value === '') {
         if (inputFields[i].getAttribute('name') == 'name'){
@@ -159,6 +163,8 @@ function contactsubmit(){
     }
     if (emptyFieldNames.length > 0) {
         document.querySelector('#fail-message').innerHTML = 'Please fill out the following fields: ' + emptyFieldNames.join(', ');
+    }else if (!validateEmail(inputFields['email'].value)) {
+        document.querySelector('#fail-message').innerHTML = 'Invalid Email';
     }else{
         document.getElementById('contactme').submit();
     }

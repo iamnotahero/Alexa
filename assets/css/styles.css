@@ -769,6 +769,7 @@ font-size: var(--big-font-size);
 }
 /*==================== TESTIMONIAL ====================*/
 /*==================== FAILED MESSAGE ====================*/
+
 /*==================== CONTACT ME ====================*/
 .contact__container{
     row-gap: 3rem;
@@ -989,6 +990,7 @@ font-size: var(--big-font-size);
     .qualification__sections{
         display: grid;
         grid-template-columns: .6fr;
+        justify-content: center;
     }
 }
 
