@@ -1,3 +1,4 @@
 # 
  My Portfolio
-VERY INCOMPLETE!!!!!!!!!!!!!
+ 
+Bedlams Template
