@@ -143,4 +143,24 @@ themeButton.addEventListener('click', () =>{
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+/*==================== FORM VALIDATION ====================*/ 
+function contactsubmit(){
+    let inputFields = document.getElementsByClassName('contact__input');
+    const emptyFieldNames = [];
+
+    for (var i = 0; i < inputFields.length; i++) {     
+    if (inputFields[i].value === '') {
+        if (inputFields[i].getAttribute('name') == 'name'){
+            inputFields[i].value = 'Anon'
+        }else{
+        emptyFieldNames.push(inputFields[i].getAttribute('name'));
+        }
+    }
+    }
+    if (emptyFieldNames.length > 0) {
+        document.querySelector('#fail-message').innerHTML = 'Please fill out the following fields: ' + emptyFieldNames.join(', ');
+    }else{
+        document.getElementById('contactme').submit();
+    }
+}
 /*==================== FACEBOOK PLUGIN ====================*/ 

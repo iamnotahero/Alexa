@@ -709,27 +709,27 @@
                         -->
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://formsubmit.co/maligaya30@gmail.com" id="contactme" method="post" class="contact__form grid">
                         <div class="contact__inputs grid">
-
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                            <span id="fail-message"></span>
+                            <div class="form-label-group contact__content">
+                                <label for="inputName" class="contact__label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control contact__input">
                             </div>
 
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="text" class="contact__input">
+                            <div class="form-label-group contact__content">
+                                <label for="inputEmail" class="contact__label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control contact__input" required>
                             </div>
 
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Message</label>
-                                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <div class="form-label-group contact__content">
+                                <label for="inputMessage" class="contact__label">Message</label>
+                                <textarea id="message" name="message" cols="0" rows="7" class="form-control contact__input" required></textarea>
                             </div>
                               
                         </div>
                         <div>
-                            <a href="#" class="button button--flex">
+                            <a href="#contact" onclick="contactsubmit()" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
                             </a>

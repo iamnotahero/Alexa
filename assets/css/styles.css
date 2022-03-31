@@ -768,8 +768,24 @@ font-size: var(--big-font-size);
     margin-bottom: 1.5rem;
 }
 /*==================== TESTIMONIAL ====================*/
-
-
+/*==================== FAILED MESSAGE ====================*/
+.error{
+    position:absolute;
+    top:0px;
+    height:20px;
+    background:#ff9696;
+    color:red;
+  }
+  
+.error.show {
+    display:block;
+    background:white;
+    transition:background 1s ease-in;
+  }
+  input:invalid {
+    background-color: pink;
+  }
+  
 /*==================== CONTACT ME ====================*/
 .contact__container{
     row-gap: 3rem;
