@@ -974,7 +974,7 @@ font-size: var(--big-font-size);
     }
 
     .home__img{
-        order: 1;
+        order: 0;
         justify-self: center;
     }
 
@@ -988,7 +988,7 @@ font-size: var(--big-font-size);
     }
 
     .qualification__sections{
-        display: center;
+        display: grid;
         grid-template-columns: .6fr;
     }
 }
