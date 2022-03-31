@@ -166,6 +166,8 @@ function contactsubmit(){
 $(document).ready(function() {
     if (window.location.hash.indexOf("#success") > -1) {
         document.querySelector('#fail-message').innerHTML = 'Message Sent Sucessfully';
+        window.location.hash = '#contact'
     }
+
   });
 /*==================== FACEBOOK PLUGIN ====================*/ 
