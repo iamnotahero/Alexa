@@ -164,7 +164,7 @@ function contactsubmit(){
     }
 }
 $(document).ready(function() {
-    if (window.location.href.indexOf("#success") > -1) {
+    if (window.location.hash.indexOf("#success") > -1) {
         document.querySelector('#fail-message').innerHTML = 'Message Sent Sucessfully';
     }
   });
