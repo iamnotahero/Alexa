@@ -163,7 +163,6 @@ function contactsubmit(){
     }
     if (emptyFieldNames.length > 0) {
         document.querySelector('#fail-message').innerHTML = 'Please fill out the following fields: ' + emptyFieldNames.join(', ');
-    }
     }else{
         document.getElementById('contactme').submit();
     }
