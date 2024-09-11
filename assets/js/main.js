@@ -163,8 +163,7 @@ function contactsubmit(){
     }
     if (emptyFieldNames.length > 0) {
         document.querySelector('#fail-message').innerHTML = 'Please fill out the following fields: ' + emptyFieldNames.join(', ');
-    }else if (!validateEmail(inputFields['email'].value)) {
-        document.querySelector('#fail-message').innerHTML = 'Invalid Email';
+    }
     }else{
         document.getElementById('contactme').submit();
     }
