@@ -1172,11 +1172,31 @@ font-size: var(--big-font-size);
     .footer__container{
         padding: 0;
     }
+    
+
+
+    .home__content{
+        grid-template-columns: 5fr 5fr 5fr 5fr;
+      
+    }
+    /*
+    .show_grid{
+        background-color: firebrick;
+    }
+    */
+
+
+
+
+
 
     .home__blob{
         width: 320px;
     }
-
+    .home__scroll{
+        display: block;
+        transform: translateY(6rem);
+    }
     .home__social{
         transform: translateX(-6rem);
     }
